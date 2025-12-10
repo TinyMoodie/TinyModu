@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produk - TinyModu</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bubbleboddy+Neue&family=Quicksand:wght@400;500&family=Fredoka+One&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fdf7ff;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background: #ffd9ec;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: #ff5fa2;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+
+        .nav-links a:hover,
+        .nav-links .active {
+            color: #ff5fa2;
+        }
+
+        /* GRID PRODUK */
+        .product-page {
+            padding: 40px 20px;
+        }
+        .product-page h2 {
+            text-align: center;
+            font-family: 'Bubbleboddy Neue', cursive;
+            margin-bottom: 30px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 15px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .product-card {
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+/* Efek pas ditekan */
+.product-card:active {
+    transform: scale(0.97);
+}
+        .product-card img {
+            width: 100%;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .product-card h3 {
+            margin: 8px 0 5px;
+            font-family: 'Bubbleboddy Neue', cursive;
+            font-size: 16px;
+        }
+
+        .product-card p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .product-card button {
+            margin-top: 10px;
+            padding: 8px 18px;
+            background: linear-gradient(135deg, #ffb6da, #a8d4ff);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+        <nav class="navbar">
+        <div class="logo">TinyModu</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html" class="active">Products</a></li>
+            <li><a href="kontak.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- PRODUK PAGE -->
+    <section class="product-page">
+        <h2>Katalog Produk</h2>
+
+        <div class="product-grid">
+
+            <div class="product-card" onclick="location.href='dp1.html'">
+                <img src="images/1.png">
+                <h3>Carrot Pen</h3>
+                <p>Rp7.000</p>
+            </div>
+
+            <div class="product-card" onclick="location.href='dp2.html'">
+                <img src="images/15.png">
+                <h3>Gelang Ocean</h3>
+                <p>Rp3.000</p>
+            </div>
+            <div class="product-card" onclick="location.href='dp3.html'">
+                <img src="images/17.png">
+                <h3>Star Hair Clip</h3>
+                <p>Rp5.000</p>
+            </div>
+            <div class="product-card" onclick="location.href='dp4.html'">
+                <img src="images/11.png">
+                <h3>Kamboja Hair Clip</h3>
+                <p>Rp7.000</p>
+            </div>
+            <div class="product-card" onclick="location.href='dp5.html'">
+                <img src="images/6.png">
+                <h3>Bag Charm</h3>
+                <p>Rp12.000</p>
+            </div>
+
+            <!-- TAMBAH PRODUK LAIN DI SINI -->
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 TinyModu - All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

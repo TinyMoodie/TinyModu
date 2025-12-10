@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk - Jepit Bunga Pastel</title>
+
+    <style>
+         /* NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background: #ffd9ec;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: #ff5fa2;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+
+        .nav-links a:hover,
+        .nav-links .active {
+            color: #ff5fa2;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-family: 'Quicksand', sans-serif;
+        }
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #ffffff;
+}
+
+
+        .container {
+            display: flex;
+            gap: 40px;
+            padding: 60px;
+        }
+
+        .left {
+            width: 50%;
+        }
+
+        .left img {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .right {
+            width: 50%;
+        }
+
+        .product-title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 24px;
+        }
+
+        .price span.old {
+            text-decoration: line-through;
+            color: gray;
+            margin-right: 10px;
+        }
+
+        .color-options div {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-block;
+            border: 1px solid #aaa;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .qty-box {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .qty-box button {
+            width: 35px;
+            height: 35px;
+            font-size: 18px;
+        }
+
+        .qty-box input {
+            width: 45px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .shop-now {
+    padding: 12px 25px;
+    background: #aee2ff;
+    border-radius: 50px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+}
+.wa-btn {
+    padding: 12px 25px;
+    background: #ff9acb;      /* pink */
+    border-radius: 50px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    transition: 0.2s;
+}
+
+.wa-btn:hover {
+    background: #ff7ebd;
+}
+.button-group {
+    display: flex;
+    flex-direction: column;   /* 🔥 ini yang bikin ke bawah */
+    gap: 10px;                /* jarak antar tombol */
+    margin-top: 20px;
+}
+.shop-now,
+.wa-btn {
+    display: block;
+    width: 100%;
+    max-width: 450px;   /* ⭐ BIKIN TOMBOL NGGAK KELEBARAN */
+    margin: 10px auto;  /* ⭐ BIKIN POSISI TENGAH */
+    text-align: center; /* ⭐ BIAR TEXT RAPI */
+}
+
+        .description {
+            margin: 60px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">TinyModu</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- FOTO -->
+        <div class="left">
+            <img src="images/6.png" alt="Carrot Pen">
+        </div>
+
+        <!-- INFO PRODUK -->
+        <div class="right">
+            <h1 class="product-title">Bag Charm</h1>
+            <div class="price">
+                <span class="old">Rp24.000</span>
+                <span class="new">Rp12.000</span>
+            </div>
+
+            <h3>Color *</h3>
+            <div class="color-options">
+                <div style="background:#f6d9e6;"></div>
+                <div style="background:#ffffff;"></div>
+            </div>
+
+            <h3>Quantity *</h3>
+            <div class="qty-box">
+                <button onclick="kurang()">-</button>
+                <input id="qty" value="1">
+                <button onclick="tambah()">+</button>
+            </div>
+
+           <div class="button-group">
+    <a href="https://id.shp.ee/MwMqnbY" class="shop-now" target="_blank">
+        Shop Now →
+    </a>
+
+    <a href="https://wa.me/6285696052799?text=Halo%20kak%2C%20saya%20mau%20pesan%20Carrot%20Pen%20ya~"
+   class="wa-btn" target="_blank">
+   Pesan via WhatsApp 💬
+</a>
+
+</div>
+        </div>
+    </div>
+
+    <!-- DESKRIPSI PANJANG -->
+    <div class="description">
+        <p>Biar tas atau kunci kamu makin gemes, cobain Bag Charm Bintang Tali Kepang Lucu Pastel ini!🌸</p>
+        <p>Desainnya super adorable, dengan boneka bintang senyum lembut, tali rajut warna pastel, dan gantungan rantai warna-warni yang aesthetic banget.</p>
+
+        <h3>Keunggulan:</h3>
+        <ul>
+            <li>Desain lucu dan unik — kombinasi bintang plush + tali rajut + rantai warna pastel</li>
+            <li>Warna kalem dan lembut, gampang dipaduin ke tas apa pun</li>
+            <li>Bahan lembut dan ringan</li>
+            <li>Bisa jadi gantungan tas, gantungan kunci, atau hadiah kecil yang menggemaskan</li>
+        </ul>
+
+        <h3>Spesifikasi:</h3>
+        <ul>
+            <li>Panjang total: ±14 cm
+
+</li>
+
+<li>LLebar boneka bintang: ±6 cm</li>
+
+<li>Berat: ±20 gram</li>
+
+<li>Bahan: plush lembut + tali rajut + rantai acrylic</li>
+
+<li>Warna: kombinasi pastel (random mix)</li>
+<li>Isi: 1 pcs Bag Charm Bintang Tali Kepang</li>
+        </ul>
+    </div>
+
+<script>
+function tambah() {
+    document.getElementById("qty").value++;
+}
+
+function kurang() {
+    let qty = document.getElementById("qty").value;
+    if (qty > 1) document.getElementById("qty").value--;
+}
+</script>
+<footer>
+        <p>© 2025 TinyModu - All Rights Reserved</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TinyModu – Contact</title>
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background: #fff;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background: #ffd9ec;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: #ff5fa2;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+
+        .nav-links a:hover,
+        .nav-links .active {
+            color: #ff5fa2;
+        }
+
+        /* CONTACT HEADER */
+        .contact-header {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .contact-header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+            color: #ff5fa2;
+        }
+
+        /* CONTACT CONTENT */
+        .contact-info {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px;
+            flex-wrap: wrap;
+        }
+
+        .contact-info .info {
+            width: 300px;
+            background: #ffeef8;
+            padding: 25px;
+            border-radius: 20px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .info p {
+            margin: 8px 0;
+            font-size: 15px;
+        }
+
+        /* FORM */
+        .contact-form {
+            width: 350px;
+            background: #eef6ff;
+            padding: 25px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 12px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            font-size: 15px;
+        }
+
+        .contact-form textarea {
+            height: 120px;
+        }
+
+        .contact-form button {
+            padding: 12px;
+            border: none;
+            background: #ff9acb;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.2s;
+        }
+
+        .contact-form button:hover {
+            background: #ff7ebd;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">TinyModu</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="contact-header">
+        <h1>Contact TinyModu ✨</h1>
+        <p>Have questions? Want to say hi? We're here for you! 💗</p>
+    </section>
+
+    <section class="contact-info">
+        <div class="info">
+            <h2>Reach Us</h2>
+            <p><strong>Email:</strong> hello.tinymodu@gmail.com</p>
+            <p><strong>WhatsApp:</strong> 08xx-xxxx-xxxx</p>
+            <p><strong>Instagram:</strong> @tinymodu</p>
+            <p><strong>Operational Hours:</strong> 09.00 – 17.00 WIB</p>
+        </div>
+
+        <form class="contact-form">
+            <h2>Send a Message 💌</h2>
+
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <textarea placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+<footer>
+        <p>© 2025 TinyModu - All Rights Reserved</p>
+    </footer>
+</body>
+</html>
